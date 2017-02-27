@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="header" style="background-color: #b98553; border-color: #b98553">
+	<h1>Crystal Collector!</h1>
+	</div>
+	<div class="instructions" style="background-color: #f9eed2";>
+			<br>
+			<p style="color: #1af51f;">You will be given a random number at the start of the game.</p>
+			<br>
+			<p style="color: #1af51f;">There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+			<br>
+			<p style="color: #1af51f;">You win the game by matching your total score to random number, You lose the game if your total score goes above the random number.</p>
+			<br>
+			<p style="color: #1af51f;">The value of each crystal is hidden from you until you click on it.</p>
+			<br>
+			<p style="color: #1af51f;">Each time when the game starts, the game will change the values of each crystal.</p>
+			<br>
+			<br>
+			<br>
+			<br>
+	</div>
+	<div class="numberToMatch" style="background-color: #45bb4b;border-color: #45bb4b;";>
+		<h1>
+		<span id= "randomNumber"; style="text-align: left";></span>
+		</h1>
+	</div>
+	<div class="winsAndLosses" style="background-color: #8ff1dc; border-color: #8ff1dc";>
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems" style="background-color: #f7ecd1; border-color: #f7ecd1";>
+		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
+		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
+	</div>
+	<div class="userTotalTitle" style="background-color: #2d9c85; border-color: #2d9c85;";>
+		<h2>Your total score is: </h2>
+	</div>
+	
+	<div class="userTotalScore" style="background-color: #2d9c85; border-color: #2d9c85; height: 100px";>
+		<h1>
+		<span id="finalTotal"></span>
+		</h1>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
